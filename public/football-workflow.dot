@@ -1,0 +1,72 @@
+digraph FootballWorkflow {
+  rankdir=LR;
+  bgcolor="transparent";
+  splines=ortho;
+  nodesep=0.85;
+  ranksep=1.15;
+
+  graph [
+    pad=0.4,
+    labelloc="t",
+    label="Football Recruiting Analytics Pipeline\n\n",
+    fontsize=50,
+    fontname="Arial Bold",
+    fontcolor="white"
+  ];
+
+  node [
+    shape=rect,
+    style="rounded,filled",
+    fontname="Arial Bold",
+    fontsize=24,
+    width=3.2,
+    height=1.35,
+    margin="0.35,0.25",
+    color="#475569",
+    penwidth=3,
+    fontcolor="white",
+    fillcolor="#1e293b"
+  ];
+
+  edge [
+    color="#60a5fa",
+    penwidth=4,
+    arrowsize=1.4
+  ];
+
+  Sources [
+    label="Recruiting Data Sources\nStats • Rosters • Performance Data",
+    fillcolor="#0f172a"
+  ];
+
+  Scraper [
+    label="Python Web Scraper\nAutomated Data Collection",
+    fillcolor="#1e3a8a"
+  ];
+
+  Processing [
+    label="Data Cleaning + Processing\nNormalize • Filter • Validate",
+    fillcolor="#1e293b"
+  ];
+
+  Analytics [
+    label="Recruiting Analytics Engine\nMetrics • Percentiles • Rankings",
+    fillcolor="#7c2d12"
+  ];
+
+  Reports [
+    label="Google Sheets / Reports\nUpdated Outputs for Staff",
+    fillcolor="#14532d"
+  ];
+
+  Coaches [
+    label="Coaching Staff Decisions\nFaster Recruit Evaluation",
+    fillcolor="#312e81"
+  ];
+
+  Sources -> Scraper;
+  Scraper -> Processing;
+  Processing -> Analytics;
+  Analytics -> Reports;
+  Reports -> Coaches;
+}
