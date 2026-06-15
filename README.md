@@ -2,7 +2,7 @@
 
 Personal portfolio website showcasing my experience, projects, technical skills, and background as a Software Engineer.
 
-🌐 Live Site: [https://your-vercel-url.vercel.app](https://ethanholley-portfolio.vercel.app/)
+🌐 Live Site: (https://ethanholley-portfolio.vercel.app/)
 
 ## Built With
 
