@@ -566,6 +566,36 @@ h1 {
   object-fit: contain;
 }
 
+.project-images-spotify {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.project-images-spotify .project-image {
+  height: 400px;
+}
+
+.project-links {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.project-links .project-link {
+  margin-top: 0;
+}
+
+@media (max-width: 1000px) {
+  .project-images-spotify {
+    grid-template-columns: 1fr;
+  }
+
+  .project-images-spotify .project-image {
+    height: 400px;
+  }
+}
+
 .skills-container {
   display: flex;
   flex-direction: column;

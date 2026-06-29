@@ -15,6 +15,32 @@ export const projects = [
     isPrivate: false,
   },
   {
+    title: "Spotify Insights App",
+    subtitle: "Full-stack Spotify analytics dashboard",
+    description:
+      "Built and deployed a full-stack Spotify analytics app that uses Spotify OAuth 2.0 to generate personalized listening stats and Wrapped-style summaries.",
+    impact:
+      "Allows users to securely connect their Spotify account, view top tracks and artists across multiple time ranges, and see a custom listening personality based on their music profile.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "FastAPI",
+      "Python",
+      "Spotify Web API",
+      "OAuth 2.0",
+      "Vercel",
+      "Render",
+    ],
+    images: [
+      "/spotify-connect.png",
+      "/spotify-stats.png",
+      "/spotify-wrapped.png",
+    ],
+    github: "https://github.com/ethan-holley/spotify-insights-app",
+    liveDemo: "https://spotify-insights-app-nu.vercel.app",
+    isPrivate: false,
+  },
+  {
     title: "Football Web Scraper",
     subtitle: "Automated recruiting analytics pipeline",
     description:
