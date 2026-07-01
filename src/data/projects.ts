@@ -19,7 +19,7 @@ export const projects = [
     subtitle: "Full-stack Spotify analytics dashboard",
     description:
       "Built and deployed a full-stack Spotify analytics app that uses Spotify OAuth 2.0 to generate personalized listening stats and Wrapped-style summaries. \
-      Live demo uses Spotify OAuth. Public access may require the user to be added as a Spotify test user.",
+      Live demo uses Spotify OAuth so public access may require the user to be added as a Spotify test user.",
     impact:
       "Allows users to securely connect their Spotify account, view top tracks and artists across multiple time ranges, and see a custom listening personality based on their music profile.",
     technologies: [
